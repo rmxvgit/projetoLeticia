@@ -1,0 +1,10 @@
+module display(
+		input logic [6:0] tentativa,
+		output logic [6:0] saida
+);
+
+always
+	begin
+		tentativa <= ~saida;
+	end
+endmodule
