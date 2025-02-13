@@ -26,8 +26,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "on" (rect 0 0 15 13)(font "Arial" (font_size 8)))
-		(text "on" (rect 21 27 36 40)(font "Arial" (font_size 8)))
+		(text "j" (rect 0 0 4 13)(font "Arial" (font_size 8)))
+		(text "j" (rect 21 27 25 40)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
@@ -40,15 +40,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "off" (rect 0 0 15 13)(font "Arial" (font_size 8)))
-		(text "off" (rect 21 59 36 72)(font "Arial" (font_size 8)))
+		(text "k" (rect 0 0 9 13)(font "Arial" (font_size 8)))
+		(text "k" (rect 21 59 30 72)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
 		(pt 96 32)
 		(output)
-		(text "out" (rect 0 0 18 13)(font "Arial" (font_size 8)))
-		(text "out" (rect 57 27 75 40)(font "Arial" (font_size 8)))
+		(text "q" (rect 0 0 8 13)(font "Arial" (font_size 8)))
+		(text "q" (rect 67 27 75 40)(font "Arial" (font_size 8)))
 		(line (pt 96 32)(pt 80 32))
 	)
 	(drawing

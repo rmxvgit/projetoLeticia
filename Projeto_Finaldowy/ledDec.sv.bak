@@ -1,0 +1,19 @@
+module clue7(
+	input logic [2:0]num,
+	output logic [6:0]lds
+);
+	always_comb begin
+	case (num)
+		0: dica = lds = 0;
+		1: dica = lds = 1;
+		2: dica = lds = 3;
+		3: dica = lds = 7;
+		4: dica = lds = 15;
+		5: dica = lds = 31;
+		6: dica = lds = 63;
+		7: dica = lds = 127;
+
+		default: dica = ~(key ^ usr);
+	endcase
+	end
+endmodule

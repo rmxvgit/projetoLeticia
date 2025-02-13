@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 472 224 640 240)
 	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "clue[5..0]" (rect 5 0 50 11)(font "Arial" ))
+	(text "key[5..0]" (rect 5 0 48 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))

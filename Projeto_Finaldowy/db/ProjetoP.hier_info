@@ -1,4 +1,414 @@
-|clueGenerator
+|ProjetoP
+HEX0[0] <= cronometro:inst4.HEX0[0]
+HEX0[1] <= cronometro:inst4.HEX0[1]
+HEX0[2] <= cronometro:inst4.HEX0[2]
+HEX0[3] <= cronometro:inst4.HEX0[3]
+HEX0[4] <= cronometro:inst4.HEX0[4]
+HEX0[5] <= cronometro:inst4.HEX0[5]
+HEX0[6] <= cronometro:inst4.HEX0[6]
+reset => cronometro:inst4.reset
+reset => lfsr_senha:inst3.reset
+reset => inst8.IN1
+reset => simplejk:inst16.k
+reset => simplejk:inst15.clk
+reset => simplejk:inst15.k
+start => inst5.IN0
+start => inst5.IN1
+start => keySel:inst6.enabler
+CLOCK_50 => clkController2:inst.clkFast
+CLOCK_50 => lfsr_senha:inst3.clock
+CLOCK_50 => clkController2:inst.clkSlow
+CLOCK_50 => clueGenerator:inst12.clk
+CLOCK_50 => simplejk:inst16.clk
+SW[0] => comp7:inst7.usr[0]
+SW[0] => HEX4[0].DATAIN
+SW[0] => clue7:inst2.usr[0]
+SW[0] => bitsIguais:inst11.usr[0]
+SW[1] => comp7:inst7.usr[1]
+SW[1] => HEX4[1].DATAIN
+SW[1] => clue7:inst2.usr[1]
+SW[1] => bitsIguais:inst11.usr[1]
+SW[2] => comp7:inst7.usr[2]
+SW[2] => HEX4[2].DATAIN
+SW[2] => clue7:inst2.usr[2]
+SW[2] => bitsIguais:inst11.usr[2]
+SW[3] => comp7:inst7.usr[3]
+SW[3] => HEX4[3].DATAIN
+SW[3] => clue7:inst2.usr[3]
+SW[3] => bitsIguais:inst11.usr[3]
+SW[4] => comp7:inst7.usr[4]
+SW[4] => HEX4[4].DATAIN
+SW[4] => clue7:inst2.usr[4]
+SW[4] => bitsIguais:inst11.usr[4]
+SW[5] => comp7:inst7.usr[5]
+SW[5] => HEX4[5].DATAIN
+SW[5] => clue7:inst2.usr[5]
+SW[5] => bitsIguais:inst11.usr[5]
+SW[6] => comp7:inst7.usr[6]
+SW[6] => HEX4[6].DATAIN
+SW[6] => clue7:inst2.usr[6]
+SW[6] => bitsIguais:inst11.usr[6]
+enter => inst9.IN1
+enter => clueSel:inst10.enabler
+HEX1[0] <= cronometro:inst4.HEX1[0]
+HEX1[1] <= cronometro:inst4.HEX1[1]
+HEX1[2] <= cronometro:inst4.HEX1[2]
+HEX1[3] <= cronometro:inst4.HEX1[3]
+HEX1[4] <= cronometro:inst4.HEX1[4]
+HEX1[5] <= cronometro:inst4.HEX1[5]
+HEX1[6] <= cronometro:inst4.HEX1[6]
+HEX2[0] <= cronometro:inst4.HEX2[0]
+HEX2[1] <= cronometro:inst4.HEX2[1]
+HEX2[2] <= cronometro:inst4.HEX2[2]
+HEX2[3] <= cronometro:inst4.HEX2[3]
+HEX2[4] <= cronometro:inst4.HEX2[4]
+HEX2[5] <= cronometro:inst4.HEX2[5]
+HEX2[6] <= cronometro:inst4.HEX2[6]
+HEX3[0] <= cronometro:inst4.HEX3[0]
+HEX3[1] <= cronometro:inst4.HEX3[1]
+HEX3[2] <= cronometro:inst4.HEX3[2]
+HEX3[3] <= cronometro:inst4.HEX3[3]
+HEX3[4] <= cronometro:inst4.HEX3[4]
+HEX3[5] <= cronometro:inst4.HEX3[5]
+HEX3[6] <= cronometro:inst4.HEX3[6]
+HEX4[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+HEX4[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+HEX4[2] <= SW[2].DB_MAX_OUTPUT_PORT_TYPE
+HEX4[3] <= SW[3].DB_MAX_OUTPUT_PORT_TYPE
+HEX4[4] <= SW[4].DB_MAX_OUTPUT_PORT_TYPE
+HEX4[5] <= SW[5].DB_MAX_OUTPUT_PORT_TYPE
+HEX4[6] <= SW[6].DB_MAX_OUTPUT_PORT_TYPE
+HEX5[0] <= clue7:inst2.dica[0]
+HEX5[1] <= clue7:inst2.dica[1]
+HEX5[2] <= clue7:inst2.dica[2]
+HEX5[3] <= clue7:inst2.dica[3]
+HEX5[4] <= clue7:inst2.dica[4]
+HEX5[5] <= clue7:inst2.dica[5]
+HEX5[6] <= clue7:inst2.dica[6]
+ledVer[0] <= ledDec:inst14.lds[0]
+ledVer[1] <= ledDec:inst14.lds[1]
+ledVer[2] <= ledDec:inst14.lds[2]
+ledVer[3] <= ledDec:inst14.lds[3]
+ledVer[4] <= ledDec:inst14.lds[4]
+ledVer[5] <= ledDec:inst14.lds[5]
+ledVer[6] <= ledDec:inst14.lds[6]
+ledVer[7] <= simplejk:inst16.q
+lg[0] <= simplejk:inst15.q
+
+
+|ProjetoP|cronometro:inst4
+fim <= countmin:inst7.out
+clock => count:inst.clk
+reset => count:inst.reset
+reset => count:inst3.reset
+reset => countseg:inst5.reset
+reset => countmin:inst7.reset
+HEX0[0] <= decoder7:inst2.Out[0]
+HEX0[1] <= decoder7:inst2.Out[1]
+HEX0[2] <= decoder7:inst2.Out[2]
+HEX0[3] <= decoder7:inst2.Out[3]
+HEX0[4] <= decoder7:inst2.Out[4]
+HEX0[5] <= decoder7:inst2.Out[5]
+HEX0[6] <= decoder7:inst2.Out[6]
+HEX1[0] <= decoder7:inst4.Out[0]
+HEX1[1] <= decoder7:inst4.Out[1]
+HEX1[2] <= decoder7:inst4.Out[2]
+HEX1[3] <= decoder7:inst4.Out[3]
+HEX1[4] <= decoder7:inst4.Out[4]
+HEX1[5] <= decoder7:inst4.Out[5]
+HEX1[6] <= decoder7:inst4.Out[6]
+HEX2[0] <= decoder7:inst6.Out[0]
+HEX2[1] <= decoder7:inst6.Out[1]
+HEX2[2] <= decoder7:inst6.Out[2]
+HEX2[3] <= decoder7:inst6.Out[3]
+HEX2[4] <= decoder7:inst6.Out[4]
+HEX2[5] <= decoder7:inst6.Out[5]
+HEX2[6] <= decoder7:inst6.Out[6]
+HEX3[0] <= decoder7:inst9.Out[0]
+HEX3[1] <= decoder7:inst9.Out[1]
+HEX3[2] <= decoder7:inst9.Out[2]
+HEX3[3] <= decoder7:inst9.Out[3]
+HEX3[4] <= decoder7:inst9.Out[4]
+HEX3[5] <= decoder7:inst9.Out[5]
+HEX3[6] <= decoder7:inst9.Out[6]
+
+
+|ProjetoP|cronometro:inst4|countmin:inst7
+clk => out~reg0.CLK
+clk => num[0]~reg0.CLK
+clk => num[1]~reg0.CLK
+clk => num[2]~reg0.CLK
+clk => num[3]~reg0.CLK
+reset => out~reg0.PRESET
+reset => num[0]~reg0.ACLR
+reset => num[1]~reg0.ACLR
+reset => num[2]~reg0.PRESET
+reset => num[3]~reg0.ACLR
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[0] <= num[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[1] <= num[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[2] <= num[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[3] <= num[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjetoP|cronometro:inst4|countseg:inst5
+clk => out~reg0.CLK
+clk => num[0]~reg0.CLK
+clk => num[1]~reg0.CLK
+clk => num[2]~reg0.CLK
+clk => num[3]~reg0.CLK
+reset => out~reg0.ACLR
+reset => num[0]~reg0.PRESET
+reset => num[1]~reg0.ACLR
+reset => num[2]~reg0.PRESET
+reset => num[3]~reg0.ACLR
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[0] <= num[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[1] <= num[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[2] <= num[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[3] <= num[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjetoP|cronometro:inst4|count:inst3
+clk => out~reg0.CLK
+clk => num[0]~reg0.CLK
+clk => num[1]~reg0.CLK
+clk => num[2]~reg0.CLK
+clk => num[3]~reg0.CLK
+reset => out~reg0.ACLR
+reset => num[0]~reg0.PRESET
+reset => num[1]~reg0.ACLR
+reset => num[2]~reg0.ACLR
+reset => num[3]~reg0.PRESET
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[0] <= num[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[1] <= num[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[2] <= num[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[3] <= num[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjetoP|cronometro:inst4|count:inst
+clk => out~reg0.CLK
+clk => num[0]~reg0.CLK
+clk => num[1]~reg0.CLK
+clk => num[2]~reg0.CLK
+clk => num[3]~reg0.CLK
+reset => out~reg0.ACLR
+reset => num[0]~reg0.PRESET
+reset => num[1]~reg0.ACLR
+reset => num[2]~reg0.ACLR
+reset => num[3]~reg0.PRESET
+out <= out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[0] <= num[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[1] <= num[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[2] <= num[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+num[3] <= num[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjetoP|cronometro:inst4|decoder7:inst2
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjetoP|cronometro:inst4|decoder7:inst4
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjetoP|cronometro:inst4|decoder7:inst6
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjetoP|cronometro:inst4|decoder7:inst9
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjetoP|clkController2:inst
+controlledClk <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+clockOff => inst.IN0
+clockOn => inst.IN1
+clkFast => inst.CLK
+clkSlow => inst1.IN1
+
+
+|ProjetoP|comp7:inst7
+ans[0] => Equal0.IN6
+ans[1] => Equal0.IN5
+ans[2] => Equal0.IN4
+ans[3] => Equal0.IN3
+ans[4] => Equal0.IN2
+ans[5] => Equal0.IN1
+ans[6] => Equal0.IN0
+usr[0] => Equal0.IN13
+usr[1] => Equal0.IN12
+usr[2] => Equal0.IN11
+usr[3] => Equal0.IN10
+usr[4] => Equal0.IN9
+usr[5] => Equal0.IN8
+usr[6] => Equal0.IN7
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjetoP|keySel:inst6
+sel[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+sel[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+sel[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+sel[4] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+sel[5] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+sel[6] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+enabler => inst.CLK
+enabler => inst2.CLK
+enabler => inst3.CLK
+enabler => inst4.CLK
+enabler => inst5.CLK
+enabler => inst6.CLK
+enabler => inst7.CLK
+key[0] => inst.DATAIN
+key[1] => inst2.DATAIN
+key[2] => inst3.DATAIN
+key[3] => inst4.DATAIN
+key[4] => inst5.DATAIN
+key[5] => inst6.DATAIN
+key[6] => inst7.DATAIN
+
+
+|ProjetoP|lfsr_senha:inst3
+LEDR[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst.CLK
+clock => inst6.CLK
+clock => inst5.CLK
+clock => inst4.CLK
+clock => inst3.CLK
+clock => inst2.CLK
+clock => inst1.CLK
+reset => inst15.IN0
+
+
+|ProjetoP|clue7:inst2
+key[0] => dica.IN0
+key[0] => dica.IN0
+key[0] => dica.IN0
+key[1] => dica.IN0
+key[1] => dica.IN0
+key[1] => dica.IN0
+key[2] => dica.IN0
+key[2] => dica.IN0
+key[2] => dica.IN0
+key[3] => dica.IN0
+key[3] => dica.IN0
+key[3] => dica.IN0
+key[4] => dica.IN0
+key[4] => dica.IN0
+key[4] => dica.IN0
+key[5] => dica.IN0
+key[5] => dica.IN0
+key[5] => dica.IN0
+key[6] => dica.IN0
+key[6] => dica.IN0
+key[6] => dica.IN0
+usr[0] => dica.IN1
+usr[0] => dica.IN1
+usr[0] => dica.IN1
+usr[1] => dica.IN1
+usr[1] => dica.IN1
+usr[1] => dica.IN1
+usr[2] => dica.IN1
+usr[2] => dica.IN1
+usr[2] => dica.IN1
+usr[3] => dica.IN1
+usr[3] => dica.IN1
+usr[3] => dica.IN1
+usr[4] => dica.IN1
+usr[4] => dica.IN1
+usr[4] => dica.IN1
+usr[5] => dica.IN1
+usr[5] => dica.IN1
+usr[5] => dica.IN1
+usr[6] => dica.IN1
+usr[6] => dica.IN1
+usr[6] => dica.IN1
+clueSel[0] => Decoder0.IN5
+clueSel[1] => Decoder0.IN4
+clueSel[2] => Decoder0.IN3
+clueSel[3] => Decoder0.IN2
+clueSel[4] => Decoder0.IN1
+clueSel[5] => Decoder0.IN0
+dica[0] <= Selector6.DB_MAX_OUTPUT_PORT_TYPE
+dica[1] <= Selector5.DB_MAX_OUTPUT_PORT_TYPE
+dica[2] <= Selector4.DB_MAX_OUTPUT_PORT_TYPE
+dica[3] <= Selector3.DB_MAX_OUTPUT_PORT_TYPE
+dica[4] <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
+dica[5] <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
+dica[6] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjetoP|clueSel:inst10
+sel[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+sel[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+sel[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+sel[4] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+sel[5] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+enabler => inst.CLK
+enabler => inst2.CLK
+enabler => inst3.CLK
+enabler => inst4.CLK
+enabler => inst5.CLK
+enabler => inst6.CLK
+key[0] => inst.DATAIN
+key[1] => inst2.DATAIN
+key[2] => inst3.DATAIN
+key[3] => inst4.DATAIN
+key[4] => inst5.DATAIN
+key[5] => inst6.DATAIN
+
+
+|ProjetoP|clueGenerator:inst12
 clue[0] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 clue[1] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 clue[2] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
@@ -11,5 +421,72 @@ clk => inst5.CLK
 clk => inst6.CLK
 clk => inst7.CLK
 clk => inst8.CLK
+
+
+|ProjetoP|ledDec:inst14
+num[0] => Decoder0.IN2
+num[1] => Decoder0.IN1
+num[1] => Decoder1.IN1
+num[2] => Decoder0.IN0
+num[2] => Decoder1.IN0
+num[2] => lds[3].DATAIN
+lds[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+lds[1] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+lds[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+lds[3] <= num[2].DB_MAX_OUTPUT_PORT_TYPE
+lds[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+lds[5] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+lds[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjetoP|nBitsIguais:inst13
+iguais[0] => Add0.IN2
+iguais[1] => Add0.IN1
+iguais[2] => Add1.IN4
+iguais[3] => Add2.IN6
+iguais[4] => Add3.IN6
+iguais[5] => Add4.IN6
+iguais[6] => Add5.IN6
+nIguais[0] <= Add5.DB_MAX_OUTPUT_PORT_TYPE
+nIguais[1] <= Add5.DB_MAX_OUTPUT_PORT_TYPE
+nIguais[2] <= Add5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjetoP|bitsIguais:inst11
+ans[0] => iguais.IN0
+ans[1] => iguais.IN0
+ans[2] => iguais.IN0
+ans[3] => iguais.IN0
+ans[4] => iguais.IN0
+ans[5] => iguais.IN0
+ans[6] => iguais.IN0
+usr[0] => iguais.IN1
+usr[1] => iguais.IN1
+usr[2] => iguais.IN1
+usr[3] => iguais.IN1
+usr[4] => iguais.IN1
+usr[5] => iguais.IN1
+usr[6] => iguais.IN1
+iguais[0] <= iguais.DB_MAX_OUTPUT_PORT_TYPE
+iguais[1] <= iguais.DB_MAX_OUTPUT_PORT_TYPE
+iguais[2] <= iguais.DB_MAX_OUTPUT_PORT_TYPE
+iguais[3] <= iguais.DB_MAX_OUTPUT_PORT_TYPE
+iguais[4] <= iguais.DB_MAX_OUTPUT_PORT_TYPE
+iguais[5] <= iguais.DB_MAX_OUTPUT_PORT_TYPE
+iguais[6] <= iguais.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjetoP|simplejk:inst16
+q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+k => inst.IN0
+j => inst.IN1
+clk => inst.CLK
+
+
+|ProjetoP|simplejk:inst15
+q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+k => inst.IN0
+j => inst.IN1
+clk => inst.CLK
 
 
