@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C35F672C6
-set_global_assignment -name TOP_LEVEL_ENTITY display
+set_global_assignment -name TOP_LEVEL_ENTITY ProjetoP
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:02:09  FEBRUARY 10, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -57,7 +57,6 @@ set_global_assignment -name BDF_FILE cronometro.bdf
 set_global_assignment -name VERILOG_FILE count.v
 set_global_assignment -name VERILOG_FILE countseg.v
 set_global_assignment -name VERILOG_FILE countmin.v
-set_global_assignment -name VECTOR_WAVEFORM_FILE wave_cronometro.vwf
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
 set_location_assignment PIN_N25 -to SW[0]
@@ -487,11 +486,17 @@ set_location_assignment PIN_W25 -to GPIO_1[34]
 set_location_assignment PIN_W23 -to GPIO_1[35]
 set_global_assignment -name BDF_FILE lfsr_senha.bdf
 set_global_assignment -name VERILOG_FILE display.v
-set_global_assignment -name VECTOR_WAVEFORM_FILE wave_lfsr_senha.vwf
+set_global_assignment -name BDF_FILE clkController.bdf
+set_global_assignment -name BDF_FILE simplejk.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE clkController2.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE batata.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/qsim/Waveform5.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/qsim/Waveform6.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/qsim/simulacao.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VECTOR_WAVEFORM_FILE wavetentandoaqui.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "E:/Projeto_Finaldowy/wavetentandoaqui.vwf"
-set_global_assignment -name BDF_FILE clkController.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/qsim/Waveform7.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/qsim/Waveform.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE /home/rafa/tudo/materias/lcl/projetoLeticia/Projeto_Finaldowy/simulation/qsim/Waveform.vwf

@@ -1,6 +1,6 @@
 Flow report for ProjetoP
-Wed Feb 12 17:52:28 2025
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Thu Feb 13 11:13:39 2025
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Wed Feb 12 17:52:20 2025           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Flow Status                        ; Successful - Thu Feb 13 11:13:37 2025           ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ProjetoP                                        ;
-; Top-level Entity Name              ; display                                         ;
+; Top-level Entity Name              ; ProjetoP                                        ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C35F672C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 7 / 33,216 ( < 1 % )                            ;
-;     Total combinational functions  ; 7 / 33,216 ( < 1 % )                            ;
-;     Dedicated logic registers      ; 7 / 33,216 ( < 1 % )                            ;
-; Total registers                    ; 7                                               ;
-; Total pins                         ; 9 / 475 ( 2 % )                                 ;
+; Total logic elements               ; 51 / 33,216 ( < 1 % )                           ;
+;     Total combinational functions  ; 51 / 33,216 ( < 1 % )                           ;
+;     Dedicated logic registers      ; 21 / 33,216 ( < 1 % )                           ;
+; Total registers                    ; 21                                              ;
+; Total pins                         ; 47 / 475 ( 10 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/12/2025 17:51:43 ;
+; Start date & time ; 02/13/2025 11:13:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ProjetoP            ;
 +-------------------+---------------------+
@@ -75,16 +75,15 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 48887645330707.173939350200728        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 0.173945601105978                     ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; display     ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; display     ; Top        ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; display     ; Top        ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top        ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --         ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; display                               ; ProjetoP      ; --          ; --         ;
 ; VERILOG_INPUT_VERSION               ; SystemVerilog_2005                    ; Verilog_2001  ; --          ; --         ;
 ; VERILOG_SHOW_LMF_MAPPING_MESSAGES   ; Off                                   ; --            ; --          ; --         ;
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
@@ -95,24 +94,24 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 4587 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:08     ; 1.0                     ; 4874 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:12     ; 1.0                     ; 4556 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 4535 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:31     ; --                      ; --                  ; 00:00:09                           ;
+; Analysis & Synthesis      ; 00:00:00     ; 1.0                     ; 335 MB              ; 00:00:01                           ;
+; Fitter                    ; 00:00:03     ; 1.0                     ; 478 MB              ; 00:00:03                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 338 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 301 MB              ; 00:00:00                           ;
+; Total                     ; 00:00:04     ; --                      ; --                  ; 00:00:05                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-MBR      ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-MBR      ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-MBR      ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-MBR      ; Windows 7 ; 6.2        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++---------------------------+------------------+----------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++---------------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis      ; rafa             ; Ubuntu 24.04.1 ; 24         ; x86_64         ;
+; Fitter                    ; rafa             ; Ubuntu 24.04.1 ; 24         ; x86_64         ;
+; Assembler                 ; rafa             ; Ubuntu 24.04.1 ; 24         ; x86_64         ;
+; TimeQuest Timing Analyzer ; rafa             ; Ubuntu 24.04.1 ; 24         ; x86_64         ;
++---------------------------+------------------+----------------+------------+----------------+
 
 
 ------------

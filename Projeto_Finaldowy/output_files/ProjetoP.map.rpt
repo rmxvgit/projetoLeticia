@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ProjetoP
-Wed Feb 12 17:51:52 2025
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Thu Feb 13 11:13:31 2025
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -14,8 +14,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
+  9. Inverted Register Statistics
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -41,16 +42,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Feb 12 17:51:50 2025           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 13 11:13:31 2025           ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ProjetoP                                        ;
-; Top-level Entity Name              ; display                                         ;
+; Top-level Entity Name              ; ProjetoP                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 7                                               ;
-;     Total combinational functions  ; 7                                               ;
-;     Dedicated logic registers      ; 7                                               ;
-; Total registers                    ; 7                                               ;
-; Total pins                         ; 9                                               ;
+; Total logic elements               ; 51                                              ;
+;     Total combinational functions  ; 51                                              ;
+;     Dedicated logic registers      ; 21                                              ;
+; Total registers                    ; 21                                              ;
+; Total pins                         ; 47                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +65,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; display            ; ProjetoP           ;
+; Top-level entity name                                                      ; ProjetoP           ; ProjetoP           ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Verilog Show LMF Mapping Messages                                          ; Off                ;                    ;
 ; Verilog Version                                                            ; SystemVerilog_2005 ; Verilog_2001       ;
@@ -150,18 +151,24 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                 ;
-+----------------------------------+-----------------+------------------------+--------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path   ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------+---------+
-; display.v                        ; yes             ; User Verilog HDL File  ; E:/Projeto_Finaldowy/display.v ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
+; decoder7.v                       ; yes             ; User Verilog HDL File              ; /home/rafa/tudo/materias/lcl/projetoLeticia/Projeto_Finaldowy/decoder7.v         ;         ;
+; ProjetoP.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /home/rafa/tudo/materias/lcl/projetoLeticia/Projeto_Finaldowy/ProjetoP.bdf       ;         ;
+; cronometro.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/rafa/tudo/materias/lcl/projetoLeticia/Projeto_Finaldowy/cronometro.bdf     ;         ;
+; count.v                          ; yes             ; User Verilog HDL File              ; /home/rafa/tudo/materias/lcl/projetoLeticia/Projeto_Finaldowy/count.v            ;         ;
+; countseg.v                       ; yes             ; User Verilog HDL File              ; /home/rafa/tudo/materias/lcl/projetoLeticia/Projeto_Finaldowy/countseg.v         ;         ;
+; countmin.v                       ; yes             ; User Verilog HDL File              ; /home/rafa/tudo/materias/lcl/projetoLeticia/Projeto_Finaldowy/countmin.v         ;         ;
+; clkController2.bdf               ; yes             ; User Block Diagram/Schematic File  ; /home/rafa/tudo/materias/lcl/projetoLeticia/Projeto_Finaldowy/clkController2.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -169,38 +176,48 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 7     ;
+; Estimated Total logic elements              ; 51    ;
 ;                                             ;       ;
-; Total combinational functions               ; 7     ;
+; Total combinational functions               ; 51    ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 45    ;
 ;     -- 3 input functions                    ; 1     ;
-;     -- <=2 input functions                  ; 6     ;
+;     -- <=2 input functions                  ; 5     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 7     ;
+;     -- normal mode                          ; 51    ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 7     ;
-;     -- Dedicated logic registers            ; 7     ;
+; Total registers                             ; 21    ;
+;     -- Dedicated logic registers            ; 21    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 9     ;
+; I/O pins                                    ; 47    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; reset ;
-; Maximum fan-out                             ; 7     ;
-; Total fan-out                               ; 36    ;
-; Average fan-out                             ; 1.57  ;
+; Maximum fan-out                             ; 22    ;
+; Total fan-out                               ; 289   ;
+; Average fan-out                             ; 2.43  ;
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |display                   ; 7 (7)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |display            ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                               ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
+; |ProjetoP                  ; 51 (1)            ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |ProjetoP                                 ; work         ;
+;    |clkController2:inst|   ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoP|clkController2:inst             ; work         ;
+;    |cronometro:inst4|      ; 48 (0)            ; 20 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoP|cronometro:inst4                ; work         ;
+;       |count:inst3|        ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoP|cronometro:inst4|count:inst3    ; work         ;
+;       |count:inst|         ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoP|cronometro:inst4|count:inst     ; work         ;
+;       |countmin:inst7|     ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoP|cronometro:inst4|countmin:inst7 ; work         ;
+;       |countseg:inst5|     ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoP|cronometro:inst4|countseg:inst5 ; work         ;
+;       |decoder7:inst2|     ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoP|cronometro:inst4|decoder7:inst2 ; work         ;
+;       |decoder7:inst4|     ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoP|cronometro:inst4|decoder7:inst4 ; work         ;
+;       |decoder7:inst6|     ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoP|cronometro:inst4|decoder7:inst6 ; work         ;
+;       |decoder7:inst9|     ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ProjetoP|cronometro:inst4|decoder7:inst9 ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -209,14 +226,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 7     ;
+; Total registers                              ; 21    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 20    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; cronometro:inst4|countmin:inst7|out    ; 2       ;
+; cronometro:inst4|count:inst|num[0]     ; 12      ;
+; cronometro:inst4|count:inst|num[3]     ; 11      ;
+; cronometro:inst4|count:inst3|num[0]    ; 12      ;
+; cronometro:inst4|count:inst3|num[3]    ; 11      ;
+; cronometro:inst4|countseg:inst5|num[0] ; 12      ;
+; cronometro:inst4|countseg:inst5|num[2] ; 11      ;
+; cronometro:inst4|countmin:inst7|num[2] ; 12      ;
+; Total number of inverted registers = 8 ;         ;
++----------------------------------------+---------+
 
 
 +-------------------------------+
@@ -232,14 +266,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
+Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Feb 12 17:51:42 2025
+    Info: Processing started: Thu Feb 13 11:13:31 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProjetoP -c ProjetoP
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file decoder7.v
     Info (12023): Found entity 1: decoder7
-Info (12021): Found 1 design units, including 1 entities, in source file projetop.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file ProjetoP.bdf
     Info (12023): Found entity 1: ProjetoP
 Info (12021): Found 1 design units, including 1 entities, in source file fdiv.v
     Info (12023): Found entity 1: fdiv
@@ -255,17 +289,35 @@ Info (12021): Found 1 design units, including 1 entities, in source file lfsr_se
     Info (12023): Found entity 1: lfsr_senha
 Info (12021): Found 1 design units, including 1 entities, in source file display.v
     Info (12023): Found entity 1: display
-Info (12127): Elaborating entity "display" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file clkController.bdf
+    Info (12023): Found entity 1: clkController
+Info (12021): Found 1 design units, including 1 entities, in source file simplejk.bdf
+    Info (12023): Found entity 1: simplejk
+Info (12021): Found 1 design units, including 1 entities, in source file clkController2.bdf
+    Info (12023): Found entity 1: clkController2
+Info (12127): Elaborating entity "ProjetoP" for the top level hierarchy
+Warning (275011): Block or symbol "cronometro" of instance "inst4" overlaps another block or symbol
+Info (12128): Elaborating entity "cronometro" for hierarchy "cronometro:inst4"
+Info (12128): Elaborating entity "countmin" for hierarchy "cronometro:inst4|countmin:inst7"
+Warning (10230): Verilog HDL assignment warning at countmin.v(22): truncated value with size 32 to match size of target (4)
+Info (12128): Elaborating entity "countseg" for hierarchy "cronometro:inst4|countseg:inst5"
+Warning (10230): Verilog HDL assignment warning at countseg.v(22): truncated value with size 32 to match size of target (4)
+Info (12128): Elaborating entity "count" for hierarchy "cronometro:inst4|count:inst3"
+Warning (10230): Verilog HDL assignment warning at count.v(22): truncated value with size 32 to match size of target (4)
+Info (12128): Elaborating entity "decoder7" for hierarchy "cronometro:inst4|decoder7:inst2"
+Info (12128): Elaborating entity "clkController2" for hierarchy "clkController2:inst"
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 16 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 7 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4597 megabytes
-    Info: Processing ended: Wed Feb 12 17:51:52 2025
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:02
+Info (21057): Implemented 98 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 37 output pins
+    Info (21061): Implemented 51 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 345 megabytes
+    Info: Processing ended: Thu Feb 13 11:13:31 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

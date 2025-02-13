@@ -1,6 +1,6 @@
 Simulator report for ProjetoP
-Wed Feb 12 17:54:33 2025
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Thu Feb 13 11:16:57 2025
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -45,48 +45,48 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 24 nodes     ;
-; Simulation Coverage         ;       4.17 % ;
-; Total Number of Transitions ; 99           ;
+; Simulation Netlist Size     ; 209 nodes    ;
+; Simulation Coverage         ;      33.49 % ;
+; Total Number of Transitions ; 1109         ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
 +-----------------------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                                                     ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------+---------------+
-; Option                                                                                     ; Setting                                   ; Default Value ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------+---------------+
-; Simulation mode                                                                            ; Functional                                ; Timing        ;
-; Start time                                                                                 ; 0 ns                                      ; 0 ns          ;
-; Simulation results format                                                                  ; VWF                                       ;               ;
-; Vector input source                                                                        ; E:/Projeto_Finaldowy/wavetentandoaqui.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On                                        ; On            ;
-; Check outputs                                                                              ; Off                                       ; Off           ;
-; Report simulation coverage                                                                 ; On                                        ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On                                        ; On            ;
-; Display missing 1-value coverage report                                                    ; On                                        ; On            ;
-; Display missing 0-value coverage report                                                    ; On                                        ; On            ;
-; Detect setup and hold time violations                                                      ; Off                                       ; Off           ;
-; Detect glitches                                                                            ; Off                                       ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off                                       ; Off           ;
-; Generate Signal Activity File                                                              ; Off                                       ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                       ; Off           ;
-; Group bus channels in simulation results                                                   ; Off                                       ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On                                        ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                       ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                       ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                      ; Auto          ;
-+--------------------------------------------------------------------------------------------+-------------------------------------------+---------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                      ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                    ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                                 ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                       ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                        ;               ;
+; Vector input source                                                                        ; /home/rafa/tudo/materias/lcl/projetoLeticia/Projeto_Finaldowy/simulation/qsim/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                         ; On            ;
+; Check outputs                                                                              ; Off                                                                                        ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                         ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                         ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                         ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                        ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                        ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                 ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                       ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+---------------+
 
 
 +----------------------+
 ; Simulation Waveforms ;
 +----------------------+
 Waveform report data cannot be output to ASCII.
-Please use Quartus II 64-Bit to view the waveform report data.
+Please use Quartus II 32-bit to view the waveform report data.
 
 
 +--------------------------------------------------------------------+
@@ -94,88 +94,341 @@ Please use Quartus II 64-Bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;       4.17 % ;
-; Total nodes checked                                 ; 24           ;
-; Total output ports checked                          ; 24           ;
-; Total output ports with complete 1/0-value coverage ; 1            ;
-; Total output ports with no 1/0-value coverage       ; 23           ;
-; Total output ports with no 1-value coverage         ; 23           ;
-; Total output ports with no 0-value coverage         ; 23           ;
+; Total coverage as a percentage                      ;      33.49 % ;
+; Total nodes checked                                 ; 209          ;
+; Total output ports checked                          ; 209          ;
+; Total output ports with complete 1/0-value coverage ; 70           ;
+; Total output ports with no 1/0-value coverage       ; 91           ;
+; Total output ports with no 1-value coverage         ; 108          ;
+; Total output ports with no 0-value coverage         ; 122          ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+------------------------------------------------------+
-; Complete 1/0-Value Coverage                          ;
-+----------------+------------------+------------------+
-; Node Name      ; Output Port Name ; Output Port Type ;
-+----------------+------------------+------------------+
-; |display|clock ; |display|clock   ; out              ;
-+----------------+------------------+------------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                    ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; Node Name                                            ; Output Port Name                                     ; Output Port Type ;
++------------------------------------------------------+------------------------------------------------------+------------------+
+; |ProjetoP|reset                                      ; |ProjetoP|reset                                      ; out              ;
+; |ProjetoP|start                                      ; |ProjetoP|start                                      ; out              ;
+; |ProjetoP|CLOCK_50                                   ; |ProjetoP|CLOCK_50                                   ; out              ;
+; |ProjetoP|con                                        ; |ProjetoP|con                                        ; pin_out          ;
+; |ProjetoP|HEX0[6]                                    ; |ProjetoP|HEX0[6]                                    ; pin_out          ;
+; |ProjetoP|HEX0[5]                                    ; |ProjetoP|HEX0[5]                                    ; pin_out          ;
+; |ProjetoP|HEX0[4]                                    ; |ProjetoP|HEX0[4]                                    ; pin_out          ;
+; |ProjetoP|HEX0[3]                                    ; |ProjetoP|HEX0[3]                                    ; pin_out          ;
+; |ProjetoP|HEX0[2]                                    ; |ProjetoP|HEX0[2]                                    ; pin_out          ;
+; |ProjetoP|HEX0[1]                                    ; |ProjetoP|HEX0[1]                                    ; pin_out          ;
+; |ProjetoP|HEX0[0]                                    ; |ProjetoP|HEX0[0]                                    ; pin_out          ;
+; |ProjetoP|HEX1[6]                                    ; |ProjetoP|HEX1[6]                                    ; pin_out          ;
+; |ProjetoP|HEX1[5]                                    ; |ProjetoP|HEX1[5]                                    ; pin_out          ;
+; |ProjetoP|HEX1[4]                                    ; |ProjetoP|HEX1[4]                                    ; pin_out          ;
+; |ProjetoP|HEX1[3]                                    ; |ProjetoP|HEX1[3]                                    ; pin_out          ;
+; |ProjetoP|clkController2:inst|inst1                  ; |ProjetoP|clkController2:inst|inst1                  ; out0             ;
+; |ProjetoP|clkController2:inst|inst~0                 ; |ProjetoP|clkController2:inst|inst~0                 ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr0    ; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr0    ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr1    ; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr1    ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr2    ; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr2    ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr3    ; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr3    ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|WideOr0    ; |ProjetoP|cronometro:inst4|decoder7:inst2|WideOr0    ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|WideOr1    ; |ProjetoP|cronometro:inst4|decoder7:inst2|WideOr1    ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|WideOr2    ; |ProjetoP|cronometro:inst4|decoder7:inst2|WideOr2    ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|WideOr3    ; |ProjetoP|cronometro:inst4|decoder7:inst2|WideOr3    ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|WideOr4    ; |ProjetoP|cronometro:inst4|decoder7:inst2|WideOr4    ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|WideOr5    ; |ProjetoP|cronometro:inst4|decoder7:inst2|WideOr5    ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|WideOr6    ; |ProjetoP|cronometro:inst4|decoder7:inst2|WideOr6    ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst|out            ; |ProjetoP|cronometro:inst4|count:inst|out            ; regout           ;
+; |ProjetoP|cronometro:inst4|count:inst|num~0          ; |ProjetoP|cronometro:inst4|count:inst|num~0          ; out              ;
+; |ProjetoP|cronometro:inst4|count:inst|num~1          ; |ProjetoP|cronometro:inst4|count:inst|num~1          ; out              ;
+; |ProjetoP|cronometro:inst4|count:inst|num~2          ; |ProjetoP|cronometro:inst4|count:inst|num~2          ; out              ;
+; |ProjetoP|cronometro:inst4|count:inst|num~3          ; |ProjetoP|cronometro:inst4|count:inst|num~3          ; out              ;
+; |ProjetoP|cronometro:inst4|count:inst|num[3]         ; |ProjetoP|cronometro:inst4|count:inst|num[3]         ; regout           ;
+; |ProjetoP|cronometro:inst4|count:inst|num[2]         ; |ProjetoP|cronometro:inst4|count:inst|num[2]         ; regout           ;
+; |ProjetoP|cronometro:inst4|count:inst|num[1]         ; |ProjetoP|cronometro:inst4|count:inst|num[1]         ; regout           ;
+; |ProjetoP|cronometro:inst4|count:inst|num[0]         ; |ProjetoP|cronometro:inst4|count:inst|num[0]         ; regout           ;
+; |ProjetoP|cronometro:inst4|count:inst3|num~0         ; |ProjetoP|cronometro:inst4|count:inst3|num~0         ; out              ;
+; |ProjetoP|cronometro:inst4|count:inst3|num~1         ; |ProjetoP|cronometro:inst4|count:inst3|num~1         ; out              ;
+; |ProjetoP|cronometro:inst4|count:inst3|num~2         ; |ProjetoP|cronometro:inst4|count:inst3|num~2         ; out              ;
+; |ProjetoP|cronometro:inst4|count:inst3|num~3         ; |ProjetoP|cronometro:inst4|count:inst3|num~3         ; out              ;
+; |ProjetoP|cronometro:inst4|count:inst3|num[3]        ; |ProjetoP|cronometro:inst4|count:inst3|num[3]        ; regout           ;
+; |ProjetoP|cronometro:inst4|count:inst3|num[0]        ; |ProjetoP|cronometro:inst4|count:inst3|num[0]        ; regout           ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|num~1      ; |ProjetoP|cronometro:inst4|countseg:inst5|num~1      ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~7 ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~7 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~8 ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~8 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~0 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~0 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~1 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~1 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~2 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~2 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~3 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~3 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~4 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~4 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~5 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~5 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~6 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~6 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~7 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~7 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~8 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~8 ; out              ;
+; |ProjetoP|cronometro:inst4|count:inst|Add0~0         ; |ProjetoP|cronometro:inst4|count:inst|Add0~0         ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst|Add0~1         ; |ProjetoP|cronometro:inst4|count:inst|Add0~1         ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst|Add0~2         ; |ProjetoP|cronometro:inst4|count:inst|Add0~2         ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst|Add0~3         ; |ProjetoP|cronometro:inst4|count:inst|Add0~3         ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst|Add0~4         ; |ProjetoP|cronometro:inst4|count:inst|Add0~4         ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst|Add0~5         ; |ProjetoP|cronometro:inst4|count:inst|Add0~5         ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst|Add0~6         ; |ProjetoP|cronometro:inst4|count:inst|Add0~6         ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst3|Add0~0        ; |ProjetoP|cronometro:inst4|count:inst3|Add0~0        ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst3|Add0~1        ; |ProjetoP|cronometro:inst4|count:inst3|Add0~1        ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst3|Add0~2        ; |ProjetoP|cronometro:inst4|count:inst3|Add0~2        ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst3|Add0~3        ; |ProjetoP|cronometro:inst4|count:inst3|Add0~3        ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst3|Add0~4        ; |ProjetoP|cronometro:inst4|count:inst3|Add0~4        ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst3|Add0~6        ; |ProjetoP|cronometro:inst4|count:inst3|Add0~6        ; out0             ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~3     ; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~3     ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst|Equal0~0       ; |ProjetoP|cronometro:inst4|count:inst|Equal0~0       ; out0             ;
++------------------------------------------------------+------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+------------------------------------------------------------------+
-; Missing 1-Value Coverage                                         ;
-+-----------------------+-----------------------+------------------+
-; Node Name             ; Output Port Name      ; Output Port Type ;
-+-----------------------+-----------------------+------------------+
-; |display|feedback     ; |display|feedback     ; out0             ;
-; |display|lfsr~0       ; |display|lfsr~0       ; out              ;
-; |display|lfsr~1       ; |display|lfsr~1       ; out              ;
-; |display|lfsr~2       ; |display|lfsr~2       ; out              ;
-; |display|lfsr~3       ; |display|lfsr~3       ; out              ;
-; |display|lfsr~4       ; |display|lfsr~4       ; out              ;
-; |display|lfsr~5       ; |display|lfsr~5       ; out              ;
-; |display|lfsr~6       ; |display|lfsr~6       ; out              ;
-; |display|lfsr[0]~reg0 ; |display|lfsr[0]~reg0 ; regout           ;
-; |display|lfsr[1]~reg0 ; |display|lfsr[1]~reg0 ; regout           ;
-; |display|lfsr[2]~reg0 ; |display|lfsr[2]~reg0 ; regout           ;
-; |display|lfsr[3]~reg0 ; |display|lfsr[3]~reg0 ; regout           ;
-; |display|lfsr[4]~reg0 ; |display|lfsr[4]~reg0 ; regout           ;
-; |display|lfsr[5]~reg0 ; |display|lfsr[5]~reg0 ; regout           ;
-; |display|lfsr[6]~reg0 ; |display|lfsr[6]~reg0 ; regout           ;
-; |display|reset        ; |display|reset        ; out              ;
-; |display|lfsr[0]      ; |display|lfsr[0]      ; pin_out          ;
-; |display|lfsr[1]      ; |display|lfsr[1]      ; pin_out          ;
-; |display|lfsr[2]      ; |display|lfsr[2]      ; pin_out          ;
-; |display|lfsr[3]      ; |display|lfsr[3]      ; pin_out          ;
-; |display|lfsr[4]      ; |display|lfsr[4]      ; pin_out          ;
-; |display|lfsr[5]      ; |display|lfsr[5]      ; pin_out          ;
-; |display|lfsr[6]      ; |display|lfsr[6]      ; pin_out          ;
-+-----------------------+-----------------------+------------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                         ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+; Node Name                                             ; Output Port Name                                      ; Output Port Type ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+; |ProjetoP|coff                                        ; |ProjetoP|coff                                        ; pin_out          ;
+; |ProjetoP|inst2                                       ; |ProjetoP|inst2                                       ; out0             ;
+; |ProjetoP|HEX1[2]                                     ; |ProjetoP|HEX1[2]                                     ; pin_out          ;
+; |ProjetoP|HEX1[0]                                     ; |ProjetoP|HEX1[0]                                     ; pin_out          ;
+; |ProjetoP|HEX2[6]                                     ; |ProjetoP|HEX2[6]                                     ; pin_out          ;
+; |ProjetoP|HEX2[5]                                     ; |ProjetoP|HEX2[5]                                     ; pin_out          ;
+; |ProjetoP|HEX2[3]                                     ; |ProjetoP|HEX2[3]                                     ; pin_out          ;
+; |ProjetoP|HEX2[2]                                     ; |ProjetoP|HEX2[2]                                     ; pin_out          ;
+; |ProjetoP|HEX2[0]                                     ; |ProjetoP|HEX2[0]                                     ; pin_out          ;
+; |ProjetoP|HEX3[6]                                     ; |ProjetoP|HEX3[6]                                     ; pin_out          ;
+; |ProjetoP|HEX3[5]                                     ; |ProjetoP|HEX3[5]                                     ; pin_out          ;
+; |ProjetoP|HEX3[2]                                     ; |ProjetoP|HEX3[2]                                     ; pin_out          ;
+; |ProjetoP|HEX3[1]                                     ; |ProjetoP|HEX3[1]                                     ; pin_out          ;
+; |ProjetoP|HEX4[6]                                     ; |ProjetoP|HEX4[6]                                     ; pin_out          ;
+; |ProjetoP|HEX4[5]                                     ; |ProjetoP|HEX4[5]                                     ; pin_out          ;
+; |ProjetoP|HEX4[4]                                     ; |ProjetoP|HEX4[4]                                     ; pin_out          ;
+; |ProjetoP|HEX4[3]                                     ; |ProjetoP|HEX4[3]                                     ; pin_out          ;
+; |ProjetoP|HEX4[2]                                     ; |ProjetoP|HEX4[2]                                     ; pin_out          ;
+; |ProjetoP|HEX4[1]                                     ; |ProjetoP|HEX4[1]                                     ; pin_out          ;
+; |ProjetoP|HEX4[0]                                     ; |ProjetoP|HEX4[0]                                     ; pin_out          ;
+; |ProjetoP|SW[6]                                       ; |ProjetoP|SW[6]                                       ; out              ;
+; |ProjetoP|SW[5]                                       ; |ProjetoP|SW[5]                                       ; out              ;
+; |ProjetoP|SW[4]                                       ; |ProjetoP|SW[4]                                       ; out              ;
+; |ProjetoP|SW[3]                                       ; |ProjetoP|SW[3]                                       ; out              ;
+; |ProjetoP|SW[2]                                       ; |ProjetoP|SW[2]                                       ; out              ;
+; |ProjetoP|SW[1]                                       ; |ProjetoP|SW[1]                                       ; out              ;
+; |ProjetoP|SW[0]                                       ; |ProjetoP|SW[0]                                       ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr0     ; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr0     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr1     ; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr1     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr4     ; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr4     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr5     ; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr5     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr0     ; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr0     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr1     ; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr1     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr3     ; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr3     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr4     ; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr4     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr6     ; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr6     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr4     ; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr4     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr6     ; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr6     ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst3|out            ; |ProjetoP|cronometro:inst4|count:inst3|out            ; regout           ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|out         ; |ProjetoP|cronometro:inst4|countseg:inst5|out         ; regout           ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|num~0       ; |ProjetoP|cronometro:inst4|countseg:inst5|num~0       ; out              ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|num~2       ; |ProjetoP|cronometro:inst4|countseg:inst5|num~2       ; out              ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|num~3       ; |ProjetoP|cronometro:inst4|countseg:inst5|num~3       ; out              ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|num[3]      ; |ProjetoP|cronometro:inst4|countseg:inst5|num[3]      ; regout           ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|num[1]      ; |ProjetoP|cronometro:inst4|countseg:inst5|num[1]      ; regout           ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|num~0       ; |ProjetoP|cronometro:inst4|countmin:inst7|num~0       ; out              ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|num~1       ; |ProjetoP|cronometro:inst4|countmin:inst7|num~1       ; out              ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|num[3]      ; |ProjetoP|cronometro:inst4|countmin:inst7|num[3]      ; regout           ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|num[1]      ; |ProjetoP|cronometro:inst4|countmin:inst7|num[1]      ; regout           ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|num[0]      ; |ProjetoP|cronometro:inst4|countmin:inst7|num[0]      ; regout           ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~0  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~0  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~1  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~1  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~2  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~2  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~3  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~3  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~5  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~5  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~6  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~6  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~7  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~7  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~8  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~8  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~9  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~9  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~10 ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~10 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~11 ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~11 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~12 ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~12 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~13 ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~13 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~14 ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~14 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~0  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~0  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~1  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~1  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~2  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~2  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~3  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~3  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~4  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~4  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~6  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~6  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~7  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~7  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~8  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~8  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~9  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~9  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~10 ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~10 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~11 ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~11 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~12 ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~12 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~13 ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~13 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~14 ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~14 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~0  ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~0  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~1  ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~1  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~2  ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~2  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~3  ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~3  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~4  ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~4  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~5  ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~5  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~9  ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~9  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~10 ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~10 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~11 ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~11 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~12 ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~12 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~13 ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~13 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~14 ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~14 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~9  ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~9  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~10 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~10 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~11 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~11 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~12 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~12 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~13 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~13 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~14 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~14 ; out              ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~0      ; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~0      ; out0             ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~2      ; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~2      ; out0             ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~6      ; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~6      ; out0             ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~0      ; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~0      ; out0             ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~1      ; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~1      ; out0             ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~2      ; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~2      ; out0             ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~3      ; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~3      ; out0             ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~5      ; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~5      ; out0             ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~6      ; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~6      ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst3|Equal0~0       ; |ProjetoP|cronometro:inst4|count:inst3|Equal0~0       ; out0             ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|Equal0~0    ; |ProjetoP|cronometro:inst4|countseg:inst5|Equal0~0    ; out0             ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|Equal0~0    ; |ProjetoP|cronometro:inst4|countmin:inst7|Equal0~0    ; out0             ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+------------------------------------------------------------------+
-; Missing 0-Value Coverage                                         ;
-+-----------------------+-----------------------+------------------+
-; Node Name             ; Output Port Name      ; Output Port Type ;
-+-----------------------+-----------------------+------------------+
-; |display|feedback     ; |display|feedback     ; out0             ;
-; |display|lfsr~0       ; |display|lfsr~0       ; out              ;
-; |display|lfsr~1       ; |display|lfsr~1       ; out              ;
-; |display|lfsr~2       ; |display|lfsr~2       ; out              ;
-; |display|lfsr~3       ; |display|lfsr~3       ; out              ;
-; |display|lfsr~4       ; |display|lfsr~4       ; out              ;
-; |display|lfsr~5       ; |display|lfsr~5       ; out              ;
-; |display|lfsr~6       ; |display|lfsr~6       ; out              ;
-; |display|lfsr[0]~reg0 ; |display|lfsr[0]~reg0 ; regout           ;
-; |display|lfsr[1]~reg0 ; |display|lfsr[1]~reg0 ; regout           ;
-; |display|lfsr[2]~reg0 ; |display|lfsr[2]~reg0 ; regout           ;
-; |display|lfsr[3]~reg0 ; |display|lfsr[3]~reg0 ; regout           ;
-; |display|lfsr[4]~reg0 ; |display|lfsr[4]~reg0 ; regout           ;
-; |display|lfsr[5]~reg0 ; |display|lfsr[5]~reg0 ; regout           ;
-; |display|lfsr[6]~reg0 ; |display|lfsr[6]~reg0 ; regout           ;
-; |display|reset        ; |display|reset        ; out              ;
-; |display|lfsr[0]      ; |display|lfsr[0]      ; pin_out          ;
-; |display|lfsr[1]      ; |display|lfsr[1]      ; pin_out          ;
-; |display|lfsr[2]      ; |display|lfsr[2]      ; pin_out          ;
-; |display|lfsr[3]      ; |display|lfsr[3]      ; pin_out          ;
-; |display|lfsr[4]      ; |display|lfsr[4]      ; pin_out          ;
-; |display|lfsr[5]      ; |display|lfsr[5]      ; pin_out          ;
-; |display|lfsr[6]      ; |display|lfsr[6]      ; pin_out          ;
-+-----------------------+-----------------------+------------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                         ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+; Node Name                                             ; Output Port Name                                      ; Output Port Type ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
+; |ProjetoP|HEX1[2]                                     ; |ProjetoP|HEX1[2]                                     ; pin_out          ;
+; |ProjetoP|HEX1[1]                                     ; |ProjetoP|HEX1[1]                                     ; pin_out          ;
+; |ProjetoP|HEX1[0]                                     ; |ProjetoP|HEX1[0]                                     ; pin_out          ;
+; |ProjetoP|HEX2[5]                                     ; |ProjetoP|HEX2[5]                                     ; pin_out          ;
+; |ProjetoP|HEX2[4]                                     ; |ProjetoP|HEX2[4]                                     ; pin_out          ;
+; |ProjetoP|HEX2[3]                                     ; |ProjetoP|HEX2[3]                                     ; pin_out          ;
+; |ProjetoP|HEX2[2]                                     ; |ProjetoP|HEX2[2]                                     ; pin_out          ;
+; |ProjetoP|HEX2[1]                                     ; |ProjetoP|HEX2[1]                                     ; pin_out          ;
+; |ProjetoP|HEX2[0]                                     ; |ProjetoP|HEX2[0]                                     ; pin_out          ;
+; |ProjetoP|HEX3[5]                                     ; |ProjetoP|HEX3[5]                                     ; pin_out          ;
+; |ProjetoP|HEX3[4]                                     ; |ProjetoP|HEX3[4]                                     ; pin_out          ;
+; |ProjetoP|HEX3[3]                                     ; |ProjetoP|HEX3[3]                                     ; pin_out          ;
+; |ProjetoP|HEX3[2]                                     ; |ProjetoP|HEX3[2]                                     ; pin_out          ;
+; |ProjetoP|HEX3[1]                                     ; |ProjetoP|HEX3[1]                                     ; pin_out          ;
+; |ProjetoP|HEX3[0]                                     ; |ProjetoP|HEX3[0]                                     ; pin_out          ;
+; |ProjetoP|HEX4[6]                                     ; |ProjetoP|HEX4[6]                                     ; pin_out          ;
+; |ProjetoP|HEX4[5]                                     ; |ProjetoP|HEX4[5]                                     ; pin_out          ;
+; |ProjetoP|HEX4[4]                                     ; |ProjetoP|HEX4[4]                                     ; pin_out          ;
+; |ProjetoP|HEX4[3]                                     ; |ProjetoP|HEX4[3]                                     ; pin_out          ;
+; |ProjetoP|HEX4[2]                                     ; |ProjetoP|HEX4[2]                                     ; pin_out          ;
+; |ProjetoP|HEX4[1]                                     ; |ProjetoP|HEX4[1]                                     ; pin_out          ;
+; |ProjetoP|HEX4[0]                                     ; |ProjetoP|HEX4[0]                                     ; pin_out          ;
+; |ProjetoP|SW[6]                                       ; |ProjetoP|SW[6]                                       ; out              ;
+; |ProjetoP|SW[5]                                       ; |ProjetoP|SW[5]                                       ; out              ;
+; |ProjetoP|SW[4]                                       ; |ProjetoP|SW[4]                                       ; out              ;
+; |ProjetoP|SW[3]                                       ; |ProjetoP|SW[3]                                       ; out              ;
+; |ProjetoP|SW[2]                                       ; |ProjetoP|SW[2]                                       ; out              ;
+; |ProjetoP|SW[1]                                       ; |ProjetoP|SW[1]                                       ; out              ;
+; |ProjetoP|SW[0]                                       ; |ProjetoP|SW[0]                                       ; out              ;
+; |ProjetoP|clkController2:inst|inst                    ; |ProjetoP|clkController2:inst|inst                    ; regout           ;
+; |ProjetoP|clkController2:inst|inst~1                  ; |ProjetoP|clkController2:inst|inst~1                  ; out0             ;
+; |ProjetoP|clkController2:inst|inst~2                  ; |ProjetoP|clkController2:inst|inst~2                  ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr1     ; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr1     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr2     ; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr2     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr3     ; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr3     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr4     ; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr4     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr5     ; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr5     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr6     ; |ProjetoP|cronometro:inst4|decoder7:inst9|WideOr6     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr1     ; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr1     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr2     ; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr2     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr3     ; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr3     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr4     ; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr4     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr5     ; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr5     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr6     ; |ProjetoP|cronometro:inst4|decoder7:inst6|WideOr6     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr4     ; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr4     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr5     ; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr5     ; out0             ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr6     ; |ProjetoP|cronometro:inst4|decoder7:inst4|WideOr6     ; out0             ;
+; |ProjetoP|cronometro:inst4|count:inst3|out            ; |ProjetoP|cronometro:inst4|count:inst3|out            ; regout           ;
+; |ProjetoP|cronometro:inst4|count:inst3|num[2]         ; |ProjetoP|cronometro:inst4|count:inst3|num[2]         ; regout           ;
+; |ProjetoP|cronometro:inst4|count:inst3|num[1]         ; |ProjetoP|cronometro:inst4|count:inst3|num[1]         ; regout           ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|out         ; |ProjetoP|cronometro:inst4|countseg:inst5|out         ; regout           ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|num~0       ; |ProjetoP|cronometro:inst4|countseg:inst5|num~0       ; out              ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|num~2       ; |ProjetoP|cronometro:inst4|countseg:inst5|num~2       ; out              ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|num[3]      ; |ProjetoP|cronometro:inst4|countseg:inst5|num[3]      ; regout           ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|num[2]      ; |ProjetoP|cronometro:inst4|countseg:inst5|num[2]      ; regout           ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|num[1]      ; |ProjetoP|cronometro:inst4|countseg:inst5|num[1]      ; regout           ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|num[0]      ; |ProjetoP|cronometro:inst4|countseg:inst5|num[0]      ; regout           ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|out         ; |ProjetoP|cronometro:inst4|countmin:inst7|out         ; regout           ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|num~0       ; |ProjetoP|cronometro:inst4|countmin:inst7|num~0       ; out              ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|num~1       ; |ProjetoP|cronometro:inst4|countmin:inst7|num~1       ; out              ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|num~2       ; |ProjetoP|cronometro:inst4|countmin:inst7|num~2       ; out              ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|num~3       ; |ProjetoP|cronometro:inst4|countmin:inst7|num~3       ; out              ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|num[3]      ; |ProjetoP|cronometro:inst4|countmin:inst7|num[3]      ; regout           ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|num[2]      ; |ProjetoP|cronometro:inst4|countmin:inst7|num[2]      ; regout           ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|num[1]      ; |ProjetoP|cronometro:inst4|countmin:inst7|num[1]      ; regout           ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|num[0]      ; |ProjetoP|cronometro:inst4|countmin:inst7|num[0]      ; regout           ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~1  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~1  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~2  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~2  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~3  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~3  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~4  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~4  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~5  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~5  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~6  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~6  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~7  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~7  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~8  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~8  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~9  ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~9  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~10 ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~10 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~11 ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~11 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~12 ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~12 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~13 ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~13 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~14 ; |ProjetoP|cronometro:inst4|decoder7:inst9|Decoder0~14 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~1  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~1  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~2  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~2  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~3  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~3  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~4  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~4  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~5  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~5  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~6  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~6  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~7  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~7  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~8  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~8  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~9  ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~9  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~10 ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~10 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~11 ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~11 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~12 ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~12 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~13 ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~13 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~14 ; |ProjetoP|cronometro:inst4|decoder7:inst6|Decoder0~14 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~1  ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~1  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~2  ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~2  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~3  ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~3  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~4  ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~4  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~5  ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~5  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~6  ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~6  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~9  ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~9  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~10 ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~10 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~11 ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~11 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~12 ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~12 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~13 ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~13 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~14 ; |ProjetoP|cronometro:inst4|decoder7:inst4|Decoder0~14 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~9  ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~9  ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~10 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~10 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~11 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~11 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~12 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~12 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~13 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~13 ; out              ;
+; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~14 ; |ProjetoP|cronometro:inst4|decoder7:inst2|Decoder0~14 ; out              ;
+; |ProjetoP|cronometro:inst4|count:inst3|Add0~5         ; |ProjetoP|cronometro:inst4|count:inst3|Add0~5         ; out0             ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~1      ; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~1      ; out0             ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~2      ; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~2      ; out0             ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~4      ; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~4      ; out0             ;
+; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~5      ; |ProjetoP|cronometro:inst4|countseg:inst5|Add0~5      ; out0             ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~0      ; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~0      ; out0             ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~1      ; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~1      ; out0             ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~2      ; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~2      ; out0             ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~4      ; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~4      ; out0             ;
+; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~5      ; |ProjetoP|cronometro:inst4|countmin:inst7|Add0~5      ; out0             ;
++-------------------------------------------------------+-------------------------------------------------------+------------------+
 
 
 +---------------------+
@@ -189,21 +442,22 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; Simulator Messages ;
 +--------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Simulator
+Info: Running Quartus II 32-bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Feb 12 17:54:31 2025
+    Info: Processing started: Thu Feb 13 11:16:57 2025
 Info: Command: quartus_sim --simulation_results_format=VWF ProjetoP -c ProjetoP
-Info (324025): Using vector source file "E:/Projeto_Finaldowy/wavetentandoaqui.vwf"
+Info (324025): Using vector source file "/home/rafa/tudo/materias/lcl/projetoLeticia/Projeto_Finaldowy/simulation/qsim/Waveform.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning (324036): Found clock-sensitive change during active clock edge at time 290.0 ns on register "|ProjetoP|clkController2:inst|inst"
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is       4.17 %
-Info (328052): Number of transitions in simulation is 99
+Info (328053): Simulation coverage is      33.49 %
+Info (328052): Number of transitions in simulation is 1109
 Info (324045): Vector file ProjetoP.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
-Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4440 megabytes
-    Info: Processing ended: Wed Feb 12 17:54:33 2025
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Quartus II 32-bit Simulator was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 280 megabytes
+    Info: Processing ended: Thu Feb 13 11:16:57 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 

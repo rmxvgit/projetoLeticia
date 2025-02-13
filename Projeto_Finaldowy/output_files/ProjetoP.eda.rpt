@@ -1,6 +1,6 @@
 EDA Netlist Writer report for ProjetoP
-Wed Feb 12 19:47:14 2025
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Thu Feb 13 11:07:17 2025
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -34,9 +34,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                    ;
 +---------------------------+-----------------------------------+
-; EDA Netlist Writer Status ; Failed - Wed Feb 12 19:47:14 2025 ;
+; EDA Netlist Writer Status ; Failed - Thu Feb 13 11:07:17 2025 ;
 ; Revision Name             ; ProjetoP                          ;
-; Top-level Entity Name     ; lfsr_senha                        ;
+; Top-level Entity Name     ; ProjetoP                          ;
 ; Family                    ; Cyclone II                        ;
 +---------------------------+-----------------------------------+
 
@@ -45,18 +45,18 @@ applicable agreement for further details.
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit EDA Netlist Writer
+Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Feb 12 19:47:13 2025
-Info: Command: quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog ProjetoP -c ProjetoP --vector_source=D:/Projeto_Finaldowy/wave_lfsr_senha.vwf --testbench_file=./simulation/qsim/ProjetoP.vt
-Error (201009): Bus port "LEDR" specified in vector source file has width of 7, which does not match width 18 of top level port of same name
-Error (201009): Bus port "LEDR" specified in vector source file has width of 7, which does not match width 18 of top level port of same name
-Error (201009): Bus port "LEDR" specified in vector source file has width of 7, which does not match width 18 of top level port of same name
+    Info: Processing started: Thu Feb 13 11:07:16 2025
+Info: Command: quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog ProjetoP -c ProjetoP --vector_source=/home/rafa/tudo/materias/lcl/projetoLeticia/Projeto_Finaldowy/simulation/qsim/Waveform6.vwf --testbench_file=./simulation/qsim/ProjetoP.vt
+Error (201009): Bus port "SW" specified in vector source file has width of 7, which does not match width 18 of top level port of same name
+Error (201009): Bus port "SW" specified in vector source file has width of 7, which does not match width 18 of top level port of same name
+Error (201009): Bus port "SW" specified in vector source file has width of 7, which does not match width 18 of top level port of same name
 Info (201000): Generated Verilog Test Bench File ./simulation/qsim/ProjetoP.vt for simulation
-Error: Quartus II 64-Bit EDA Netlist Writer was unsuccessful. 3 errors, 0 warnings
-    Error: Peak virtual memory: 4513 megabytes
-    Error: Processing ended: Wed Feb 12 19:47:15 2025
-    Error: Elapsed time: 00:00:02
-    Error: Total CPU time (on all processors): 00:00:01
+Error: Quartus II 32-bit EDA Netlist Writer was unsuccessful. 3 errors, 0 warnings
+    Error: Peak virtual memory: 321 megabytes
+    Error: Processing ended: Thu Feb 13 11:07:17 2025
+    Error: Elapsed time: 00:00:01
+    Error: Total CPU time (on all processors): 00:00:00
 
 
