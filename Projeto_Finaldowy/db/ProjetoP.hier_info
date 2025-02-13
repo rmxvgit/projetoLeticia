@@ -1,12 +1,4 @@
 |ProjetoP
-coff <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-reset => inst2.IN0
-reset => cronometro:inst4.reset
-start => inst5.IN0
-start => inst5.IN1
-CLOCK_50 => clkController2:inst.clkFast
-CLOCK_50 => clkController2:inst.clkSlow
-con <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 HEX0[0] <= cronometro:inst4.HEX0[0]
 HEX0[1] <= cronometro:inst4.HEX0[1]
 HEX0[2] <= cronometro:inst4.HEX0[2]
@@ -14,6 +6,29 @@ HEX0[3] <= cronometro:inst4.HEX0[3]
 HEX0[4] <= cronometro:inst4.HEX0[4]
 HEX0[5] <= cronometro:inst4.HEX0[5]
 HEX0[6] <= cronometro:inst4.HEX0[6]
+reset => cronometro:inst4.reset
+reset => inst8.IN1
+reset => lfsr_senha:inst3.reset
+start => inst5.IN0
+start => inst5.IN1
+start => keySel:inst6.enabler
+CLOCK_50 => clkController2:inst.clkFast
+CLOCK_50 => clkController2:inst.clkSlow
+CLOCK_50 => lfsr_senha:inst3.clock
+SW[0] => comp7:inst7.usr[0]
+SW[0] => HEX4[0].DATAIN
+SW[1] => comp7:inst7.usr[1]
+SW[1] => HEX4[1].DATAIN
+SW[2] => comp7:inst7.usr[2]
+SW[2] => HEX4[2].DATAIN
+SW[3] => comp7:inst7.usr[3]
+SW[3] => HEX4[3].DATAIN
+SW[4] => comp7:inst7.usr[4]
+SW[4] => HEX4[4].DATAIN
+SW[5] => comp7:inst7.usr[5]
+SW[5] => HEX4[5].DATAIN
+SW[6] => comp7:inst7.usr[6]
+SW[6] => HEX4[6].DATAIN
 HEX1[0] <= cronometro:inst4.HEX1[0]
 HEX1[1] <= cronometro:inst4.HEX1[1]
 HEX1[2] <= cronometro:inst4.HEX1[2]
@@ -42,13 +57,13 @@ HEX4[3] <= SW[3].DB_MAX_OUTPUT_PORT_TYPE
 HEX4[4] <= SW[4].DB_MAX_OUTPUT_PORT_TYPE
 HEX4[5] <= SW[5].DB_MAX_OUTPUT_PORT_TYPE
 HEX4[6] <= SW[6].DB_MAX_OUTPUT_PORT_TYPE
-SW[0] => HEX4[0].DATAIN
-SW[1] => HEX4[1].DATAIN
-SW[2] => HEX4[2].DATAIN
-SW[3] => HEX4[3].DATAIN
-SW[4] => HEX4[4].DATAIN
-SW[5] => HEX4[5].DATAIN
-SW[6] => HEX4[6].DATAIN
+key[0] <= keySel:inst6.sel[0]
+key[1] <= keySel:inst6.sel[1]
+key[2] <= keySel:inst6.sel[2]
+key[3] <= keySel:inst6.sel[3]
+key[4] <= keySel:inst6.sel[4]
+key[5] <= keySel:inst6.sel[5]
+key[6] <= keySel:inst6.sel[6]
 
 
 |ProjetoP|cronometro:inst4
@@ -222,5 +237,65 @@ clockOff => inst~1.IN0
 clockOn => inst~0.IN1
 clkFast => inst.CLK
 clkSlow => inst1.IN1
+
+
+|ProjetoP|comp7:inst7
+ans[0] => Equal0.IN6
+ans[1] => Equal0.IN5
+ans[2] => Equal0.IN4
+ans[3] => Equal0.IN3
+ans[4] => Equal0.IN2
+ans[5] => Equal0.IN1
+ans[6] => Equal0.IN0
+usr[0] => Equal0.IN13
+usr[1] => Equal0.IN12
+usr[2] => Equal0.IN11
+usr[3] => Equal0.IN10
+usr[4] => Equal0.IN9
+usr[5] => Equal0.IN8
+usr[6] => Equal0.IN7
+eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjetoP|keySel:inst6
+sel[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+sel[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+sel[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+sel[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+sel[4] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+sel[5] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+sel[6] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+enabler => inst.CLK
+enabler => inst2.CLK
+enabler => inst3.CLK
+enabler => inst4.CLK
+enabler => inst5.CLK
+enabler => inst6.CLK
+enabler => inst7.CLK
+key[0] => inst.DATAIN
+key[1] => inst2.DATAIN
+key[2] => inst3.DATAIN
+key[3] => inst4.DATAIN
+key[4] => inst5.DATAIN
+key[5] => inst6.DATAIN
+key[6] => inst7.DATAIN
+
+
+|ProjetoP|lfsr_senha:inst3
+LEDR[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+clock => inst.CLK
+clock => inst6.CLK
+clock => inst5.CLK
+clock => inst4.CLK
+clock => inst3.CLK
+clock => inst2.CLK
+clock => inst1.CLK
+reset => inst15.IN0
 
 
