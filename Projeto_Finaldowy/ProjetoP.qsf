@@ -488,9 +488,6 @@ set_global_assignment -name BDF_FILE lfsr_senha.bdf
 set_global_assignment -name VERILOG_FILE display.v
 set_global_assignment -name BDF_FILE clkController.bdf
 set_global_assignment -name BDF_FILE simplejk.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name BDF_FILE clkController2.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/qsim/Waveform5.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/qsim/Waveform6.vwf
@@ -499,6 +496,13 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/qsim/Waveform7.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/qsim/Waveform.vwf
 set_global_assignment -name BDF_FILE keySel.bdf
 set_global_assignment -name SYSTEMVERILOG_FILE comp7.sv
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE /home/rafa/tudo/materias/lcl/projetoLeticia/Projeto_Finaldowy/Waveform1.vwf
+set_global_assignment -name SYSTEMVERILOG_FILE clueGen.sv
+set_global_assignment -name BDF_FILE clueSel.bdf
+set_global_assignment -name BDF_FILE clueGenerator.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE /home/rafa/tudo/materias/lcl/projetoLeticia/Projeto_Finaldowy/Waveform2.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

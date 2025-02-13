@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Feb 13 11:59:01 2025
+Analysis & Synthesis Status : Successful - Thu Feb 13 13:04:34 2025
 Quartus II 32-bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : ProjetoP
-Top-level Entity Name : ProjetoP
+Top-level Entity Name : clueGenerator
 Family : Cyclone II
-Total logic elements : 67
-    Total combinational functions : 56
-    Dedicated logic registers : 35
-Total registers : 35
-Total pins : 52
+Total logic elements : 8
+    Total combinational functions : 4
+    Dedicated logic registers : 6
+Total registers : 6
+Total pins : 7
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

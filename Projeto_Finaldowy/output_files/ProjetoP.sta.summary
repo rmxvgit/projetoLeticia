@@ -2,124 +2,44 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow Model Setup 'CLOCK_50'
-Slack : -1.860
-TNS   : -2.213
-
-Type  : Slow Model Setup 'cronometro:inst4|countseg:inst5|out'
-Slack : -0.217
-TNS   : -0.558
-
-Type  : Slow Model Setup 'cronometro:inst4|count:inst3|out'
-Slack : -0.171
-TNS   : -0.514
-
-Type  : Slow Model Setup 'cronometro:inst4|count:inst|out'
-Slack : -0.079
-TNS   : -0.279
-
-Type  : Slow Model Setup 'start'
-Slack : 0.104
+Type  : Slow Model Setup 'clk'
+Slack : 0.098
 TNS   : 0.000
 
-Type  : Slow Model Hold 'CLOCK_50'
-Slack : 0.251
+Type  : Slow Model Hold 'clk'
+Slack : 0.532
 TNS   : 0.000
 
-Type  : Slow Model Hold 'cronometro:inst4|count:inst3|out'
-Slack : 0.391
+Type  : Slow Model Recovery 'clk'
+Slack : -1.337
+TNS   : -8.022
+
+Type  : Slow Model Removal 'clk'
+Slack : 1.672
 TNS   : 0.000
 
-Type  : Slow Model Hold 'cronometro:inst4|count:inst|out'
-Slack : 0.391
-TNS   : 0.000
-
-Type  : Slow Model Hold 'cronometro:inst4|countseg:inst5|out'
-Slack : 0.391
-TNS   : 0.000
-
-Type  : Slow Model Hold 'start'
-Slack : 0.520
-TNS   : 0.000
-
-Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Type  : Slow Model Minimum Pulse Width 'clk'
 Slack : -1.380
-TNS   : -14.380
+TNS   : -7.380
 
-Type  : Slow Model Minimum Pulse Width 'start'
+Type  : Fast Model Setup 'clk'
+Slack : 0.549
+TNS   : 0.000
+
+Type  : Fast Model Hold 'clk'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'clk'
+Slack : -0.175
+TNS   : -1.050
+
+Type  : Fast Model Removal 'clk'
+Slack : 0.875
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk'
 Slack : -1.380
-TNS   : -8.380
-
-Type  : Slow Model Minimum Pulse Width 'cronometro:inst4|count:inst3|out'
-Slack : -0.500
-TNS   : -5.000
-
-Type  : Slow Model Minimum Pulse Width 'cronometro:inst4|count:inst|out'
-Slack : -0.500
-TNS   : -5.000
-
-Type  : Slow Model Minimum Pulse Width 'cronometro:inst4|countseg:inst5|out'
-Slack : -0.500
-TNS   : -5.000
-
-Type  : Fast Model Setup 'CLOCK_50'
-Slack : -0.506
-TNS   : -0.506
-
-Type  : Fast Model Setup 'cronometro:inst4|count:inst3|out'
-Slack : 0.433
-TNS   : 0.000
-
-Type  : Fast Model Setup 'cronometro:inst4|countseg:inst5|out'
-Slack : 0.436
-TNS   : 0.000
-
-Type  : Fast Model Setup 'cronometro:inst4|count:inst|out'
-Slack : 0.498
-TNS   : 0.000
-
-Type  : Fast Model Setup 'start'
-Slack : 0.550
-TNS   : 0.000
-
-Type  : Fast Model Hold 'CLOCK_50'
-Slack : -0.002
-TNS   : -0.002
-
-Type  : Fast Model Hold 'cronometro:inst4|count:inst3|out'
-Slack : 0.215
-TNS   : 0.000
-
-Type  : Fast Model Hold 'cronometro:inst4|count:inst|out'
-Slack : 0.215
-TNS   : 0.000
-
-Type  : Fast Model Hold 'cronometro:inst4|countseg:inst5|out'
-Slack : 0.215
-TNS   : 0.000
-
-Type  : Fast Model Hold 'start'
-Slack : 0.240
-TNS   : 0.000
-
-Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
-Slack : -1.380
-TNS   : -14.380
-
-Type  : Fast Model Minimum Pulse Width 'start'
-Slack : -1.380
-TNS   : -8.380
-
-Type  : Fast Model Minimum Pulse Width 'cronometro:inst4|count:inst3|out'
-Slack : -0.500
-TNS   : -5.000
-
-Type  : Fast Model Minimum Pulse Width 'cronometro:inst4|count:inst|out'
-Slack : -0.500
-TNS   : -5.000
-
-Type  : Fast Model Minimum Pulse Width 'cronometro:inst4|countseg:inst5|out'
-Slack : -0.500
-TNS   : -5.000
+TNS   : -7.380
 
 ------------------------------------------------------------
